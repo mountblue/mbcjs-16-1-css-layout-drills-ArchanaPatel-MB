@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 650px;
+            width: 650px;
+            margin: auto;
+            display: flex;
+        }
+
+        #outer {
+            height: 650px;
+            width: 650px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+
+        .circle {
+            height: 15px;
+            width: 15px;
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+            border-radius: 10px;
+        }
+
+        #circle1 {
+            background-color: red;
+        }
+
+        #circle2 {
+            background-color: yellow;
+        }
+
+        #circle3 {
+            background-color: green;
+        }
+
+        #inner {
+            height: 595px;
+            width: 642px;
+            display: flex;
+            align-items: stretch;
+            margin: auto;
+            position: relative;
+            top: 25px;
+            background-color: white;
+           
+        }
+
+        #inner_most1 {
+            text-emphasis-position: 0px;
+            font-size: 13px;
+            color: white;
+            height: 160px;
+            width: 160px;
+            background-color: black;
+            margin-right: 200px;
+        }
+
+        .inner_most {
+            font-size: 13px;
+            color: white;
+            height: 160px;
+            width: 160px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div id="inner">
+            <div id="inner_most1">Div1</div>
+            <div class="inner_most">Div2</div>
+            <div class="inner_most">Div3</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
